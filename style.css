@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url("baggrund.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+#overlay {
+    background: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.releaseText {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.uploadBox {
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    margin: auto;
+    max-width: 500px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+}
+
+.counter {
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+button {
+    padding: 14px 28px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: white;
+    color: black;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+#gallery {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+#gallery img {
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+}

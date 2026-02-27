@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Celines Konfirmation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="overlay">
+
+    <h1>Celines Konfirmation</h1>
+
+    <p class="releaseText">
+        <strong>i morgen kan i se alle billeder da er taget i dag</strong>
+    </p>
+
+    <div class="uploadBox">
+        <p>Upload op til 5 billeder pr person</p>
+
+        <div class="counter">
+            <span id="count">0</span> / 5 uploadet
+        </div>
+
+        <input type="file" id="photoInput" accept="image/*" multiple hidden>
+        <button id="customUploadBtn">Vælg billeder</button>
+
+        <div id="message"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
